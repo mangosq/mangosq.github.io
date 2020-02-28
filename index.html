@@ -2,6 +2,22 @@
 <body>
   <h1>我叫董凯特！</h1>
   <p>我的学号是<span id="studnentnumber">19002090108</span></p>
-  <img id="logo" src="IMG_1582.JPG">
+
+  <script src="jquery-3.4.1.js"></script>
+<script src="jssor.slider.min.js"></script>
+<link rel="stylesheet" href="/my.css" type="text/css">
+<script>
+    jQuery(document).ready(function ($) {
+        var options = { $AutoPlay: 1 };
+        var jssor1_slider = new $JssorSlider$("jssor_1", options);
+    });
+</script>
+<div id="jssor_1" style="position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+    <div data-u="slides" style="position:absolute;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+        <div><img data-u="image" src="IMG_1582.JPG" /></div>
+        <div><img data-u="image" src="IMG_1582.JPG" /></div>
+    </div>
+</div>
+
 </body>
 </html>
