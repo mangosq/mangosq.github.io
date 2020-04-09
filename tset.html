@@ -2,10 +2,56 @@
 <body>
     <script src="./start.js" type="text/javascript"></script>
     <script src="./underscore.js" type="text/javascript"></script>
-
+    <script src="jquery-3.4.1.js"></script>
+    
+    <ul class="myul"></ul>
+    
     <script type="text/javascript">
+        
+        /*$(function(){
+            $("header").text($("header").text+"正在直播");
+            $("h1").click(function(){alert("hello")})
+        });*/
 
-        var a=10,fn,bar=function(x){
+        /*var h1=window.document.getElementById("header"); 
+        h1.innerHTML="hello 正在直播";
+        h1.onclick=function(){alert("hello");}*/
+        
+        /*var value=11;
+        var initvalue=22;
+
+        function  addition(){
+            var value=initvalue;
+
+            return {add:function add(x){
+                value=value+x;
+            },
+
+            print:function print(){
+                console.log(value);
+            }
+        }
+
+        }
+
+        var func=addition();
+
+        func.add(33);
+        func.add(44);
+        func.print();*/
+        
+        var data=[
+            {name:'计算机安装与维护',credit:2},
+            {name:'静态网页制作',credit:2},
+            {name:'计算机编程基础',credit:4},
+            {name:'大学英语',credit:2},
+            {name:'软件技术导论',credit:2},
+        ];
+        $.each(data,function(index,item){
+            $(".myul").append("<li>"+item.name+"(学分："+item.credit+")"+"</li>");
+        });
+
+        /*var a=10,fn,bar=function(x){
             var b=5;
             fn(x+b);
         };
@@ -25,7 +71,7 @@
         ];
         //data.start={max:window.my.max(data)};
         data.underscore={max:_.max(data,function(it){return it.credit;})};
-        console.log(data.underscore);
+        console.log(data.underscore);*/
     </script>
 
 </body>
